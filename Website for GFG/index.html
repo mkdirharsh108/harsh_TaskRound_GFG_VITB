@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GFG Student Chapter - VIT Bhopal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>GeeksforGeeks Student Chapter - VIT Bhopal</h1>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#members">Members</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="menu-toggle">☰</button>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h2>Welcome to GFG VIT Bhopal</h2>
+        <p>Your journey to learning and growing starts here!</p>
+    </section>
+    
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a community of passionate learners and tech enthusiasts.</p>
+    </section>
+    
+    <section id="events">
+        <h2>Upcoming Events</h2>
+        <div id="event-list"></div>
+    </section>
+    
+    <section id="members">
+        <h2>Members</h2>
+        <p>Join us and become a part of the GFG family!</p>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <p>Follow us on social media!</p>
+    </section>
+
+    <!-- Modal for Event Details -->
+    <div id="event-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 GFG Student Chapter - VIT Bhopal</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
