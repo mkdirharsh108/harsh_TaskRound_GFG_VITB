@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Problem Practice Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Coding Problem Practice Platform</h1>
+        <p>Test your coding skills by solving problems and submitting your solutions!</p>
+    </header>
+    <main>
+        <section id="problems">
+            <h2>Available Problems</h2>
+            <div id="problem-list">
+                <!-- Problems will be loaded dynamically here -->
+            </div>
+        </section>
+        <section id="submission">
+            <h2>Submit Your Solution</h2>
+            <form id="solution-form">
+                <label for="problem-id">Select Problem:</label>
+                <select id="problem-id" required>
+                    <option value="">--Select a Problem--</option>
+                </select>
+                <label for="code">Your Code:</label>
+                <textarea id="code" rows="10" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="result"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Coding Practice Platform</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
